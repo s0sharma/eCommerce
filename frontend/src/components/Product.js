@@ -4,6 +4,7 @@ import Rating from './Rating'
 import { Link } from 'react-router-dom'
 
 // props => {product} as we are export propos from homescreen
+//Show all the products details like id, name, img, rating etc.,  that we access through props
 const Product = (props) => {
 	return (
 		<Card className="my-3 p-3 rounded">

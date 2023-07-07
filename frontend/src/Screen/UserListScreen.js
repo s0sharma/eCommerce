@@ -21,13 +21,13 @@ const UserListScreen = () => {
 
 
    useEffect(() => {
-      if (userInfo && userInfo.isAdmin) {
+      if (userInfo && userInfo.isAdmin) { //Do not show user list to other than adminT
          dispatch(listUsers())
 
       } else {
          navigateLog('/login')
       }
-   }, [dispatch, navigateLog, userInfo, userDelete])
+   }, [dispatch, navigateLog, userInfo, successDelete])
 
    const deleteHandler = (id) => {
       if (window.confirm('Are you sure')) {
@@ -64,6 +64,7 @@ const UserListScreen = () => {
                                  )}
                            </td>
                            <td>
+                              {/* {console.log("UserList: ", user._id)} */}
                               <Link to={`/admin/user/${user._id}/edit`}>
                                  <Button variant='light' className='btn-sm'>
                                     <i className='fas fa-edit'></i>

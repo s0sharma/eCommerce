@@ -24,6 +24,7 @@ const HomeScreen = () => {
 	const productList = useSelector(state => state.productList)
 	const { loading, error, products, page, pages } = productList
 
+	// As soon as our component load useEffect fire off
 	useEffect(() => {
 		dispatch(listProducts(keyword, pageNo))
 
@@ -35,10 +36,11 @@ const HomeScreen = () => {
 			<Meta />
 			{!keyword ? <ProductCarousel /> : <Link to='/' className='btn btn-light'> Go Back </Link>}
 			<h1> Latest Product </h1>
-			{loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> :
+			{loading ?( <Loader /> ): error ?( <Message variant='danger'>{error}</Message>) :
 				(
 					<>
 						<Row>
+							{/* Loop through all products using map */}
 							{products.map((product) => (
 								//Need to pass a unique key for each product
 								<Col key={product._id} sm={12} md={6} lg={4} xl={3}>

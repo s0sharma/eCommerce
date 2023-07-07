@@ -25,6 +25,8 @@ const ProfileScreen = () => {
    const userDetails = useSelector((state) => state.userDetails)
    const { loading, error, user } = userDetails
 
+   console.log("ProfileScree.js ", user)
+
    const userLogin = useSelector((state) => state.userLogin)
    const { userInfo } = userLogin
 

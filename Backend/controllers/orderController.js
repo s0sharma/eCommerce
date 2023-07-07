@@ -24,8 +24,11 @@ const addOrderItems = asyncHandler(async (req, res) => {
 // @route GET /api/orders/:id
 // @access Private
 const getOrderByID = asyncHandler(async (req, res) => {
+   // We will fetch the data from URL and we also want to fetch that user name and email from user. So we use
+   // Populate
    const order = await Order.findById(req.params.id).populate('user', 'name email')
 
+   // If order exist then send json of the order
    if (order) {
       res.json(order)
    } else {

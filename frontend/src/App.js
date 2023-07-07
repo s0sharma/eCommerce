@@ -27,6 +27,7 @@ const App = () => {
 				<Container>
 					{/* Exact is beacuse we want to match path exactly to / */}
 					<Routes>
+						{/* What components do we load when go to that path */}
 						<Route path="/order/:id" Component={OrderScreen} />
 						<Route path="/shipping" Component={ShippingScreen} />
 						<Route path="/payment" Component={PaymentScreen} />
