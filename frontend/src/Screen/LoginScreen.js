@@ -72,10 +72,10 @@ const LoginScreen = () => {
                <Form.Control type='password' placeholder='Enter email' value={password} onChange={(e) => setPassword(e.target.value)}></Form.Control>
             </Form.Group>
 
-            <Button type='submit' variant='primary'>Sign In</Button>
+            <Button className='mt-3' type='submit' variant='primary'>Sign In</Button>
 
          </Form>
-         
+
          {/* If a new user arrive then we redirect them to register page */}
          <Row className='py-3'>
             <Col>

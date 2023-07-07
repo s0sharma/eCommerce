@@ -43,7 +43,7 @@ const UserEditScreen = () => {
          navigateLog('/admin/userlist')
 
       } else {
-         if (user.name || user._id !== Number(userId)) {
+         if (!user.name || user._id !== userId) {
             dispatch(getUserDetails(userId))
          } else {
             setName(user.name)
