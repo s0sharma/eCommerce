@@ -33,6 +33,29 @@ h2 {
 }
 
 /* carousel */
+
+
+@media (max-width: 560px) {
+      .carousel-caption h1 {
+            font-size: 300%;
+      }
+
+      .carousel-caption h3 {
+            font-size: 100%;
+      }
+}
+
+@media (max-width: 400px) {
+      .carousel-caption h1 {
+            font-size: 200%;
+      }
+
+      .carousel-caption h3 {
+            font-size: 80%;
+      }
+}
+
+
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active{
