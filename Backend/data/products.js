@@ -8,7 +8,7 @@ const products = [
 		category: 'Electronics',
 		price: 89999,
 		countInStock: 10,
-		rating: 4.5,
+		rating: 5,
 		numReviews: 12,
 	},
 	{
@@ -32,7 +32,7 @@ const products = [
 		category: 'Electronics',
 		price: 186490.02,
 		countInStock: 5,
-		rating: 3,
+		rating: 5,
 		numReviews: 12,
 	},
 	{
@@ -44,7 +44,7 @@ const products = [
 		category: 'Electronics',
 		price: 93999,
 		countInStock: 11,
-		rating: 5,
+		rating: 3,
 		numReviews: 12,
 	},
 	{
@@ -79,7 +79,7 @@ const products = [
 		category: 'Electronics',
 		price: 30599.01,
 		countInStock: 0,
-		rating: 8,
+		rating: 2,
 		numReviews: 12,
 	}, {
 		name: 'NIKON D7500 20.9MP Digital Camera',
@@ -90,7 +90,7 @@ const products = [
 		category: 'Electronics',
 		price: 83499.05,
 		countInStock: 5,
-		rating: 10,
+		rating: 3,
 		numReviews: 12,
 	}, {
 		name: 'Sony 6100L 24.2 MP Digital Camera',
@@ -101,7 +101,7 @@ const products = [
 		category: 'Electronics',
 		price: 66990,
 		countInStock: 2,
-		rating: 8,
+		rating: 4,
 		numReviews: 2,
 	}, {
 		name: 'Samsung Galaxy S23 Ultra 5G',
@@ -112,7 +112,7 @@ const products = [
 		category: 'Electronics',
 		price: 124999,
 		countInStock: 5,
-		rating: 5,
+		rating: 4,
 		numReviews: 50,
 	}, {
 		name: 'SAMSUNG Galaxy Buds 2',
@@ -134,7 +134,7 @@ const products = [
 		category: 'Electronics',
 		price: 14899,
 		countInStock: 1,
-		rating: 8,
+		rating: 5,
 		numReviews: 2,
 	}, {
 		name: 'Oneplus Buds Pro Bluetooth',
