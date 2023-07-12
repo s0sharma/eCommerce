@@ -1,7 +1,7 @@
 const products = [
 	{
 		name: 'Acer Predator Gaming Laptop',
-		image: '/images/Acer_Predator.jpg',
+		image: '/images/Acer.jpg',
 		description:
 			'Extreme Performance : Crush the competition with the impressive power.',
 		brand: 'Acer',
